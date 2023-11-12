@@ -28,7 +28,7 @@
     color: #fff;
 }
 
-#main-content button{
+button{
     background: #c51111;
     color: #fff;
     border: none;
@@ -44,8 +44,8 @@
 #bg-video{
     position: fixed;
     top: 0;
-    min-width: 100vw;
-    min-height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
     z-index: -1;
 }
 
@@ -61,5 +61,48 @@
     height: 100%;
     position: fixed;
     top: 0;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+#contact{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 13px;
+    position: fixed;
+    left: -400px;
+    z-index: 4;
+}
+
+#contact h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#contact input, textarea{
+    height: 35px;
+    width: 300px;
+    padding-left: 10px;
+    outline-color: chartreuse;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#contact textarea{
+    height: 100px;
+    padding-top: 10px;
+}
+
+#gradient-form{
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
 }

@@ -17,9 +17,20 @@
             <img src="./assets/logo.png" alt="logo super Mario" id="logo-super-mario">
             <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo!</p>
             <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia! Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
-            <button>Fale conosco</button>
+            <button onclick="showForm()">Fale conosco</button>
         </div>
         <img src="./assets/mario.png" alt="imagem de mario e Luigi" id="mario-and-luigi">
+        
+        <form id="contact">
+            <h2>Fale Conosco</h2>
+            <input type="text" placeholder="Seu nome" required>
+            <input type="tel" placeholder="Seu telefone" required>
+            <textarea name="message" id="message" placeholder="Digite seu problema aqui" required></textarea>
+            <button onclick="outForm()">Enviar Formulário</button>
+        </form>
+
+        <div id="gradient-form"></div>
+
     </main>
 </body>
 </html>
